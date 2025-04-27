@@ -3,5 +3,14 @@ RETURN VARCHAR2
 IS
 BEGIN
 RETURN 'hello world!!';
-END;
+END SHow;
+
+CREATE OR REPLACE FUNCTION Add_Fun(num1 IN NUMBER, num2 IN NUMBER)
+RETURN NUMBER
+IS
+val NUMBER;
+BEGIN
+val:= num1+num2;
+RETURN val;
+END Add_Fun;
 /
